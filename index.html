@@ -168,63 +168,42 @@
         }
 
         /* About Section */
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 4rem;
-            align-items: center;
-        }
+       .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* spacing between image and text */
+    flex-wrap: wrap; /* makes it responsive */
+}
 
-    .about-image {
-    width: 300px;
-    height: 300px;
+.about-image img.profile-image {
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border: 4px solid #64ffda;
-}
-
-.profile-image {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
-    display: block;
+    border: 5px solid #1a73e8;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
+.about-text {
+    max-width: 600px;
+}
 
-        .about-text h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            color: #e0e0e0;
-        }
+.contact-info {
+    margin-top: 15px;
+}
 
-        .about-text p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #b0b0b0;
-            margin-bottom: 1.5rem;
-        }
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
 
-        .contact-info {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
+.contact-item i {
+    margin-right: 10px;
+    color: #1a73e8;
+}
 
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: rgba(26, 26, 46, 0.6);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(100, 255, 218, 0.2);
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            font-size: 0.9rem;
-            color: #64ffda;
-        }
 
         /* Skills Section */
         .skills-grid {
@@ -559,6 +538,7 @@
         </div>
     </div>
 </section>
+
 
 
 
